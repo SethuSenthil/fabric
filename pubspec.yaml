@@ -16,7 +16,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
 # In Windows, build-name is used as the major, minor, and patch parts
 # of the product and file versions while build-number is used as the build suffix.
-version: 1.0.0+1
+version: 1.0.0+2
 
 environment:
   sdk: '>=3.0.5 <4.0.0'
@@ -40,6 +40,16 @@ dependencies:
   universal_html: ^2.2.3
   shared_preferences: ^2.2.0
   uuid: ^3.0.7
+  timeago: ^3.5.0
+  path_provider: ^2.0.15
+  loader_overlay: ^2.2.0
+  flutter_spinkit: ^5.2.0
+  awesome_dialog: ^2.2.1
+  fluttertoast: ^8.2.2
+  share_plus: ^7.0.2
+  screenshot: ^2.1.0
+  video_player: ^2.7.0
+  chewie: ^1.7.0
 
 dev_dependencies:
   flutter_test:
@@ -83,8 +93,17 @@ flutter:
      - family: InstagramSans
        fonts:
          - asset: fonts/InstagramSans-Bold.ttf
+           weight: 700
          - asset: fonts/InstagramSans-Medium.ttf
+           weight: 500
          - asset: fonts/InstagramSans-Regular.ttf
+     - family: SFPro
+       fonts:
+         - asset: fonts/SFPRODISPLAYBOLD.OTF
+           weight: 700
+         - asset: fonts/SFPRODISPLAYMEDIUM.OTF
+           weight: 500
+         - asset: fonts/SFPRODISPLAYREGULAR.OTF
   #         style: italic
   #   - family: Trajan Pro
   #     fonts:
@@ -94,3 +113,12 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+
+flutter_fusion:
+  verbose: false #default is false
+  build_flags: []
+  ios: true
+  android: false
+  web: false
+  auto_increment_build: true #default is false
+  git: true #default is false
