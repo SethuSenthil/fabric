@@ -1,0 +1,3 @@
+const String LATEST_ANDROID_APP_VERSION = "289.0.0.77.109";
+
+const String key_SAVED_THREADS_MAP = "SAVED_THREADS_MAP";
